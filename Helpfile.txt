@@ -1,0 +1,19 @@
+The NX and NY values set the grid size of the poisson equation
+Change these in line 6 and 7 of the code to adjust code according to your needs.
+
+# define NX 232
+# define NY 232
+
+In the directory with the code files, run the following commands:-
+
+For serial,
+
+gcc -o serial poisson_serial.c -lm
+./serial
+
+For parallel,
+
+gcc -o parallel poisson_openmp.c -fopenmp -lm
+./parallel
+
+The outputs will be displayed on the screen.
